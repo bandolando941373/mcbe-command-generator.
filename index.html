@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Bedrock Command Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minecraft Bedrock Command Generator</h1>
+    </header>
+    <main>
+        <div class="command-selector-container">
+            <label for="command-selector">Select Command:</label>
+            <select id="command-selector">
+                <option value="">--Please choose a command--</option>
+            </select>
+        </div>
+        <div id="command-options" class="command-options-container">
+            <!-- Dynamic options will be inserted here -->
+        </div>
+        <div class="output-container">
+            <label for="command-output">Generated Command:</label>
+            <textarea id="command-output" readonly></textarea>
+            <button id="copy-button">Copy Command</button>
+        </div>
+        <div id="error-container" class="error-container"></div>
+    </main>
+    <footer>
+        <p>Created with Gemini</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

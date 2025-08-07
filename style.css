@@ -1,0 +1,222 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px #000;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.command-selector-container, .command-options-container, .output-container {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+select, input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #f2f2f2;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea#command-output {
+    height: 120px;
+    background-color: #1a1a1a;
+    color: #a5d6a7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    resize: vertical;
+    white-space: pre-wrap;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #5cb85c;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.error-container {
+    padding: 15px;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+.error-container ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.input-error {
+    border: 2px solid #d9534f !important;
+}
+
+.command-option {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+}
+
+.coords-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.selector-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.selector-row select {
+    flex-grow: 1;
+}
+
+.add-param-button {
+    background-color: #5bc0de;
+    font-size: 1em;
+    padding: 12px;
+}
+.add-param-button:hover {
+    background-color: #31b0d5;
+}
+
+.params-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selector-param-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.selector-param-container .param-key {
+    flex-basis: 150px;
+}
+
+.selector-param-container .param-value-container {
+    flex-grow: 1;
+}
+
+.param-value-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.param-value-group input {
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+.remove-param-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+}
+.remove-param-button:hover {
+    background-color: #c9302c;
+}
+
+/* Execute Builder Styles */
+#execute-builder {
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+}
+
+.execute-sub-command {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#add-execute-sub-command {
+    background-color: #008CBA;
+    margin-bottom: 15px;
+}
+#add-execute-sub-command:hover {
+    background-color: #007B9A;
+}
+
+.run-command-container {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #4CAF50;
+}
+
+#execute-run-command-options {
+    padding-left: 20px;
+    border-left: 2px solid #555;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
